@@ -4,6 +4,6 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.check),
-
+    # path('', views.check),
+    path('', views.test),
 ]

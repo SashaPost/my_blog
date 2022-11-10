@@ -1,0 +1,64 @@
+
+/* it's ok for now, but have to improve this later */
+
+/* sidebar menu */
+.sidenav {
+
+    /* height: 100%; */
+    /* position: fixed; */
+
+    width: 160px;
+
+    position: relative; 
+    float: left; 
+    margin: 0;
+
+    /* border: 0; */
+
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111; /* choose a different color */
+    overflow-x: hidden;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+/* navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181; /* choose a different color */
+    display: block;
+}
+
+/* changes nav. links color, when mouse moves over them */
+.sidenav a:hover {
+    color: #f1f1f1; /* choose a different color */
+}
+
+/* style page content */
+.main {
+    /* min-width: 200px; */
+    margin-left: 120px;
+    margin-top: 62px;
+    /* padding: 0px 10px; */
+
+    position: relative; 
+    float: left; 
+    width: 33%; 
+    min-width: 200px;
+
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, 
+change the style of the sidebar (less padding and a smaller font size) */ 
+@media screen and (max-heght: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
